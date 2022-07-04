@@ -1,0 +1,109 @@
+# Var List
+one = 1; two = 2; three = 3; four = 4 ;five = 5
+six = 6; seven = 7; eight = 8; nine = 9
+
+def tic_tac_toe_board():
+    print(f' {one}  |  {two}  |  {three}  ')
+    print('---------------')
+    print(f' {four}  |  {five}  |  {six}  ')
+    print('---------------')
+    print(f' {seven}  |  {eight}  |  {nine} ')
+
+while True:
+    tic_tac_toe_board()
+# Player One
+    while True:
+        print("Player ones turn:::::")
+        player_one = int(input("Select a sqaure 1-9: "))
+        if player_one == 1:
+            one = 'x'
+            break
+        elif player_one == 2:
+            two = 'x'
+            break
+        elif player_one == 3:
+            three = 'x'
+            break
+        elif player_one == 4:
+            four = 'x'
+            break
+        elif player_one == 5:
+            five = 'x'
+            break
+        elif player_one == 6:
+            six = 'x'
+            break
+        elif player_one == 7:
+            seven = 'x'
+            break
+        elif player_one == 8:
+            eight = 'x'
+            break
+        elif player_one == 9:   
+            nine = 'x'
+            break
+        else:
+            print("Not a vaild choice, try again")
+
+    tic_tac_toe_board()
+#Player One conditions to win
+    if (one == 'x' and two == 'x' and three == 'x') or (four == 'x' and five == 'x' and six == 'x') or (seven == 'x' and eight == 'x' and nine == 'x'):    
+        print("player one wins!")
+        tic_tac_toe_board()
+        break
+    if (one == 'x' and three == 'x' and seven == 'x') or (two == 'x' and five == 'x' and eight == 'x') or (three == 'x' and six == 'x' and nine == 'x'):
+        print("player one wins!")
+        tic_tac_toe_board()
+        break
+    if (one == 'x' and five == 'x' and nine == 'x') or (three == 'x' and five == 'x' and seven == 'x'):
+        print("player one wins!")
+        tic_tac_toe_board()
+        break
+
+# Player two
+    while True:
+        print("Player twos turn::::")
+        player_two = int(input("Select a sqaure 1-9: "))
+        if player_two == 1:
+            one = 'o'
+            break
+        elif player_two == 2:
+            two = 'o'
+            break
+        elif player_two == 3:
+            three = 'o'
+            break
+        elif player_two == 4:
+            four = 'o'
+            break
+        elif player_two == 5:
+            five = 'o'
+            break
+        elif player_two == 6:
+            six = 'o'
+            break
+        elif player_two == 7:
+            seven = 'o'
+            break
+        elif player_two == 8:
+            eight = 'o'
+            break
+        elif player_two == 9:
+            nine = 'o'
+            break
+        else:
+            print("Not a vaild choice, try again")
+
+#Player two conditions to win
+    if (one == 'o' and two == 'o' and three == 'o') or (four == 'o'   and five == 'o'  and six == 'o') or (seven == 'o'  and eight == 'o'  and nine == 'o'): 
+        print("player two wins!")
+        tic_tac_toe_board()
+        break
+    if (one == 'o'  and three == 'o'  and seven == 'o') or (two == 'o'  and five == 'o'  and eight == 'o') or (three == 'o'  and six == 'o'  and nine == 'o'):
+        print("player two wins!")
+        tic_tac_toe_board()
+        break
+    if (one == 'o'  and five == 'o'  and nine == 'o') or (three == 'o'  and five == 'o'  and seven == 'o'):
+        print("player two wins!")
+        tic_tac_toe_board()
+        break
